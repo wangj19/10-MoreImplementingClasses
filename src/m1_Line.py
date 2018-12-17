@@ -792,7 +792,6 @@ def run_test_reverse():
     print('  False')
     print('  True')
 
-
 def run_test_slope():
     """ Tests the   slope   method of the Line class. """
     m1t.run_test_slope()  # This runs OUR tests.
