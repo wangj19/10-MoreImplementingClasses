@@ -3,9 +3,10 @@ A   Baby   class and functions that use/test it.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
-
+         and Jiadi Wanf.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
+import rosegraphics
+import math
 
 def main():
     """
@@ -98,6 +99,25 @@ def main():
 #         'Baby <your baby's name> is CRYING uncontrollably!  Feed the Baby!'
 #
 ###############################################################################
+class Baby():
+    def __init__(self,name):
+        self.number = 0
+        self.name = name
+        print('Hello Baby {}'.format(self.name))
+    def feed_baby(self):
+        self.number = 0
+        print('Thank you for feeding baby {}'.format(self.name))
+    def hour_passes(self):
+        if self.number == 0:
+            self.number = self.number + 1
+            print('Baby {} is sleeping'.format(self.name))
+        elif self.number == 1:
+            self.number += 1
+            print('Baby {} is awake. Time for food'.format(self.name))
+        elif self.number >=2:
+            self.number += 1
+            print('Baby {} is CRYING uncontrollably! Feed the Baby'.format(self.name))
+
 
 ###############################################################################
 # The   Baby   class (and its methods) should begins here.
